@@ -22,3 +22,12 @@ git commit -am "备注信息" // 将内容放至仓库 也可用git commit -a -m
 * git commit中的备注信息尽量完善 养成良好提交习惯 例如 git commit -m "变更(范围)：变更的内容"
 
 
+git checkout +文件名  恢复被修改的文件
+git checkout .  恢复所有被修改的文件。
+
+
+git的基本配置：https://blog.csdn.net/lucky__Yang/article/details/80148420?utm_source=app
+git在push时常遇见的问题:https://www.jianshu.com/p/c10d5811a180
+使用TortoiseGit时遇见push不上去的问题：修改其设置里的网络中的，ssh客户端路径为：C:\Program Files\Git\usr\bin\ssh.exe
+
+
