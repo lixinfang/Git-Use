@@ -1,0 +1,24 @@
+“git remote -v”查看项目远程地址
+git branch -a”查看远程项目所有分支，红颜色分支代表当前所在分支，其他的所列的就是所有分支了。
+输入“git log”查看历史提交信息。
+git status”检查下修改了什么内容。
+git remote show origin”查看当前仓库基本信息
+git checkout 分支名      切换分支
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git init // 初始化 在工作路径上创建主分支
+git clone 地址 // 克隆远程仓库
+git clone -b 分支名 地址 // 克隆分支的代码到本地
+git status // 查看状态
+git add 文件名 // 将某个文件存入暂存区
+git add b c //把b和c存入暂存区
+git add . // 将所有文件提交到暂存区
+git add -p 文件名 // 一个文件分多次提交
+git stash -u -k // 提交部分文件内容 到仓库 例如本地有3个文件 a b c 只想提交a b到远程仓库 git add a b 然后 git stash -u -k 再然后git commit -m "备注信息" 然后再push push之后 git stash pop 把之前放入堆栈的c拿出来 继续下一波操作
+git commit -m "提交的备注信息"  // 提交到仓库
+若已经有若干文件放入仓库，再次提交可以不用git add和git commit -m "备注信息" 这2步， 直接用
+git commit -am "备注信息" // 将内容放至仓库 也可用git commit -a -m "备注信息"
+* git commit中的备注信息尽量完善 养成良好提交习惯 例如 git commit -m "变更(范围)：变更的内容"
+
+
